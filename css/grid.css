@@ -1,0 +1,63 @@
+#page1 {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 100px 200px;
+    gap: 0.1em;
+}
+
+#page1 header {
+    background-color: #e327272a;
+    grid-column: 1 / -1;
+}
+
+#page1 main {
+    background-color: aquamarine;
+
+}
+
+#page1 aside {
+    background-color: brown;
+}
+
+#page1 footer {
+    background-color: rgb(196, 74, 196);
+    grid-column: 1 / -1;
+}
+
+
+
+#page2  {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 100px 200px;
+    gap: 0.1em;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "h a"
+                         "m a"
+                         "f f"
+}
+
+#page2  header {
+    background-color: brown;
+    /* grid-column: 1 / -1; */
+    grid-template-areas: h;
+}
+
+#page2  main {
+    background-color: aquamarine;
+    grid-area: a;
+}
+
+#page2  aside {
+    background-color: bisque;
+    grid: m;
+
+}
+
+#page2  footer {
+    background-color: violet;
+    grid-column: 1 / -1;
+    grid: f;
+}
+
